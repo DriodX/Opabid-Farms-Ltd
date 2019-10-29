@@ -14,9 +14,17 @@
     font-weight: 1000;
 }
 
+    .body-content .heading span {
+        color: #17454E;
+    }
+
 .body-content .title {
     font-weight: 600;
 }
+
+    .body-content .title span {
+        color: #17454E;
+    }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -49,7 +57,7 @@ img {
 }
 
     .main_title span {
-        color: #77b122;
+        color: #17454E;
     }
 
 @media (max-width: 991px) {
@@ -95,14 +103,14 @@ img {
 
 .primary_btn {
     display: inline-block;
-    background: #77b122;
+    background: #17454E;
     padding: 0px 20px;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 12px;
     font-weight: 600;
     line-height: 35px;
-    border: 1px solid #77b122;
+    border: 1px solid #17454E;
     border-radius: 5px;
     outline: none !important;
     box-shadow: none !important;
@@ -114,12 +122,13 @@ img {
 
     .primary_btn:hover {
         background: transparent;
-        color: #77b122;
+        text-decoration: none;
+        color: #17454E;
     }
 
     .primary_btn.yellow_btn {
-        background: #fdbb00 !important;
-        border: 1px solid #fdbb00 !important;
+        background: #B01513 !important;
+        border: 1px solid #B01513 !important;
         color: #000000;
     }
 
@@ -182,7 +191,7 @@ a.navbar-brand {
 
         .header_area .navbar .nav .nav-item .nav-link {
             font-size: 16px;
-            font-weight: 200;
+            font-weight: 400;
             line-height: 80px;
             font-family: 'Raleway', Helvetica, Arial, sans-serif;
             /*-webkit-font-smoothing: antialiased;*/
@@ -198,7 +207,7 @@ a.navbar-brand {
 
         .header_area .navbar .nav .nav-item:hover .nav-link,
         .header_area .navbar .nav .nav-item.active .nav-link {
-            color: #77b122;
+            color: #17454E;
         }
 
         .header_area .navbar .nav .nav-item.submenu {
@@ -271,7 +280,7 @@ a.navbar-brand {
     }
 
     .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-        background: #77b122;
+        background: #17454E;
         color: #fff;
     }
 
@@ -297,7 +306,7 @@ a.navbar-brand {
     top: -70px;
     left: 0;
     right: 0;
-    background: #222222;
+    background: #bdb6b6;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -347,7 +356,7 @@ a.navbar-brand {
             .home_banner_area .banner_inner .banner_content .upper_text {
                 font-size: 50px;
                 text-transform: uppercase;
-                color: #77b122;
+                color: #17454E;
             }
 
 @media (max-width: 767px) {
@@ -444,7 +453,7 @@ a.navbar-brand {
 }
 
 .single_doings {
-    padding: 40px;
+    padding: 30px;
     border-radius: 5px;
     box-shadow: none;
     text-align: center;
@@ -459,16 +468,26 @@ a.navbar-brand {
     }
 }
 
-.single_doings img {
+
+.single_doings .doings_img {
+    
+    height: 220px;
+    width: 100%;
+    border-radius: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin-bottom: 35px;
 }
+        
+    @media (max-width: 576px) {
+        .single_doings .doings_img {
+            margin-bottom: 25px;
+            max-height: 120px;
+        }
+    }
 
-.single_doings h4 {
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-
-.single_doings p {
+    .single_doings p {
     margin-bottom: 0px;
 }
 
@@ -541,7 +560,7 @@ a.navbar-brand {
 }
 
     .products .card .raised_goal span {
-        color: #77b122;
+        color: #17454E;
     }
 
 .products .card .donation .primary_btn {
@@ -550,7 +569,7 @@ a.navbar-brand {
 }
 
 .products .card .donation span {
-    color: #77b122;
+    color: #17454E;
 }
 
 .products .card .card-text {
@@ -570,9 +589,9 @@ a.navbar-brand {
     }
 
     .products .card:hover .donation .primary_btn {
-        background: #fdbb00;
+        background: #B01513;
         color: #000000;
-        border: 1px solid #fdbb00;
+        border: 1px solid #B01513;
     }
 /* End Products Area css
 ============================================================================================ */
@@ -624,7 +643,7 @@ a.navbar-brand {
 
         .hero-wrap .slider-text .bread {
             font-weight: 800;
-            color: #fff;
+            color: #17454E;
             font-size: 30px;
             font-family: "Poppins", Arial, sans-serif;
             letter-spacing: 3px;
@@ -869,7 +888,7 @@ a.navbar-brand {
 }
 
     .heading-section .subheading {
-        font-size: 18px;
+        font-size: 20px;
         display: block;
         margin-bottom: 10px;
         font-family: "Lora", Georgia, serif;
@@ -882,7 +901,8 @@ a.navbar-brand {
         font-size: 40px;
         font-weight: 600;
         color: #000000;
-        font-family: "Poppins", Arial, sans-serif;
+        font-family: 'Karla', sans-serif;
+        
     }
 
 @media (max-width: 767.98px) {
@@ -990,6 +1010,22 @@ a.navbar-brand {
     background: #f9fafc;
 }
 
+.team_area .main_title .title {
+    font-size: 25px;
+}
+
+@media (max-width: 500px) {
+    .team_area .main_title .title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .team_area .main_title .title {
+        font-size: 15px;
+    }
+}
+
 .team_inner {
     margin-bottom: -50px;
 }
@@ -1006,13 +1042,13 @@ a.navbar-brand {
         border-radius: 50%;
     }
 
-    /*@media (max-width: 955px) {
-    .team_item .team_img {
-        max-height: 200px;
-        max-width: 200px;
+    @media (max-width: 522px) {
+    .team_item .team_img .img-fluid {
+        height: 250px;
+        border-radius: 50%
 
     }
-}*/
+}
 
     .team_item .team_name {
         text-align: center;
@@ -1177,6 +1213,7 @@ a.navbar-brand {
 .volunter-form .form-control {
     border: 2px solid rgba(255, 255, 255, 0.7);
     height: 58px !important;
+    max-width: 100% !important;
     background: transparent !important;
     color: rgba(255, 255, 255, 0.8) !important;
     font-size: 18px;
@@ -1214,8 +1251,8 @@ a.navbar-brand {
 }
 
 .volunter-form .yellow_btn {
-    background: #77b122 !important;
-    border: 1px solid #77b122 !important;
+    background: #17454E !important;
+    border: 1px solid #17454E !important;
     color: #fff;
 }
 
@@ -1237,8 +1274,8 @@ a.navbar-brand {
 .footer-area {
     z-index: 2;
     display: block;
-    background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../img/banner/footer.jpg) no-repeat scroll center center;
-    background-size: auto;
+    background: linear-gradient(rgba(3, 1, 10, 0.78), rgba(0, 0, 0, 0.61)), url(../img/banner/footer.jpg) no-repeat scroll center center;
+    background-size: cover;
 }
 
 .single-footer-widget p {
@@ -1265,7 +1302,8 @@ a.navbar-brand {
 }
 
 .single-footer-widget .sm-head {
-    color: #77b122;
+    font-size: 18px;
+    color: #ffffff;
     margin-bottom: 0px;
 }
 
@@ -1278,10 +1316,14 @@ a.navbar-brand {
         height: 28px;
         line-height: 28px;
         text-align: center;
-        background: #77b122;
+        background: #17454E;
         color: #ffffff;
         border-radius: 20px;
     }
+
+.tp_widgets .list {
+    padding-left: 0px;
+}
 
 .tp_widgets .list li {
     margin-bottom: 12px;
@@ -1297,11 +1339,11 @@ a.navbar-brand {
     }
 
     .tp_widgets .list li a:hover {
-        color: #77b122;
+        color: #17454E;
     }
 
 .footer_link {
-    color: #77b122;
+    color: #17454E;
     font-size: 15px;
     font-weight: 700;
 }
@@ -1346,7 +1388,7 @@ a.navbar-brand {
     }
 
         .footer-bottom .footer-text a {
-            color: #77b122;
+            color: #17454E;
             opacity: 1;
         }
 
@@ -1394,15 +1436,15 @@ a.navbar-brand {
         padding-left: 45px;
     }
 
-    .contact_info .info_item i {
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-size: 20px;
-        line-height: 24px;
-        color: #60bc0f;
-        font-weight: 600;
-    }
+        .contact_info .info_item i {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+            line-height: 24px;
+            color: #17454E;
+            font-weight: 600;
+        }
 
     .contact_info .info_item h6 {
         font-size: 16px;

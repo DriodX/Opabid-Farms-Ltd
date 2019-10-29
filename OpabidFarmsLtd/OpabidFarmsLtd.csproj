@@ -125,6 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +161,9 @@
     <Content Include="img\banner\home.jpg" />
     <Content Include="img\banner\logo.png" />
     <Content Include="img\doings\c1.jpg" />
+    <Content Include="img\doings\d1.jpg" />
+    <Content Include="img\doings\d2.jpg" />
+    <Content Include="img\doings\d3.jpg" />
     <Content Include="img\gallery\g1.jpg" />
     <Content Include="img\gallery\g2.jpg" />
     <Content Include="img\logo.png" />
@@ -264,7 +268,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
